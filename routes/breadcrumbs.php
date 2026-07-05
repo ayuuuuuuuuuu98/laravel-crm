@@ -439,6 +439,12 @@ Breadcrumbs::for('settings.data_transfers.import', function (BreadcrumbTrail $tr
     $trail->push(trans('admin::app.settings.data-transfer.imports.import.title'), route('admin.settings.data_transfer.imports.import', $import->id));
 });
 
+// Settings > WhatsApp
+Breadcrumbs::for('settings.whatsapp', function (BreadcrumbTrail $trail) {
+    $trail->parent('settings');
+    $trail->push(trans('whatsapp::app.settings.title'), route('admin.whatsapp.settings.index'));
+});
+
 // Configuration
 Breadcrumbs::for('configuration', function (BreadcrumbTrail $trail) {
     $trail->parent('dashboard');

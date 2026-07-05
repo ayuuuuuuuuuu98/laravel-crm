@@ -1,0 +1,21 @@
+{
+    "name": "webkul/whatsapp",
+    "description": "WhatsApp CRM package for Krayin",
+    "type": "package",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\WhatsApp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\WhatsApp\\Providers\\WhatsAppServiceProvider"
+            ]
+        }
+    }
+}
