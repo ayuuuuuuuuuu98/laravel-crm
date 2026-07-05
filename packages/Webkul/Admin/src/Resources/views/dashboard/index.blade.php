@@ -75,7 +75,7 @@
             @include('admin::dashboard.index.revenue-by-types')
         </div>
 
-        {!! view_render_event('admin.dashboard.index.content.left.after') !!}
+        {!! view_render_event('admin.dashboard.index.content.right.after') !!}
     </div>
 
     {!! view_render_event('admin.dashboard.index.content.after') !!}

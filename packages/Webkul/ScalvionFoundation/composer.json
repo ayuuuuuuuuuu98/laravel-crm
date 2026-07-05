@@ -1,0 +1,21 @@
+{
+    "name": "webkul/scalvion-foundation",
+    "description": "Notification, follow-up, audit, timeline, and search foundation for Scalvion OS on Krayin CRM",
+    "type": "package",
+    "license": "MIT",
+    "require": {
+        "php": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\ScalvionFoundation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\ScalvionFoundation\\Providers\\ScalvionFoundationServiceProvider"
+            ]
+        }
+    }
+}
